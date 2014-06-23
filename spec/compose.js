@@ -21,6 +21,11 @@ describe('_.compose', function() {
     expect(proxy(f)(2)).toBe(4);
   });
 
+  it('should compose f', function() {
+    var composed_f = _.compose(f);
+    expect(composed_f(3)).toBe(5);
+  });
+
   it('should compose fog', function() {
     var fog = _.compose(f, g);
     expect(fog(3)).toBe(10);
