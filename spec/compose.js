@@ -41,4 +41,11 @@ describe('_.compose', function() {
     expect(gof(3)).toBe(10);
   });
 
+  it('should compose a multi argument function h', function() {
+    var h = function (num1, num2) {
+      return num1 + num2;
+    }
+    var goh = _.compose(g, h);
+    expect(goh(3, 2)).toBe(10);
+  });
 });
