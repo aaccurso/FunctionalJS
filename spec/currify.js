@@ -23,12 +23,14 @@ describe('_.currify', function() {
 
   it('should currify f', function() {
     var curried_f = _.currify(f);
+    expect(typeof curried_f).toBe('function');
     expect(curried_f(3)(4)).toBe(7);
     expect(curried_f(4)(5)).toBe(9);
   });
 
   it('should currify g', function() {
     var curried_g = _.currify(g);
+    expect(typeof curried_g).toBe('function');
     expect(curried_g(3)(4)).toBe(12);
     expect(curried_g(4)(5)).toBe(20);
   });
