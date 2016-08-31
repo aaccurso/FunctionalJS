@@ -1,8 +1,8 @@
 {
   "name": "FunctionalJS",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Library that implements some functional concepts on JS.",
-  "main": "functional.js",
+  "main": "lib/functional.js",
   "scripts": {
     "test": "test"
   },
